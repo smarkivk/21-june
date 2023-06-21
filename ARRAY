@@ -1,0 +1,52 @@
+The given code is an example of a web shop application using an ArrayList to manage products. Here's a breakdown of the code:
+
+Import the required classes:
+java
+Copy code
+import java.util.ArrayList;
+Define the WebShopApp class with the main method:
+java
+Copy code
+public class WebShopApp {
+    public static void main(String[] args) {
+        // Code goes here...
+    }
+}
+Create an ArrayList to store Product objects:
+java
+Copy code
+ArrayList<Product> products = new ArrayList<>();
+Add Product objects to the ArrayList using the add method:
+java
+Copy code
+products.add(new Product("Fidget spinner", 3.99, "It's fun."));
+products.add(new Product("Earbud", 39.99, "Extremely clear sound. Waterproof."));
+products.add(new Product("Earbud", 39.99, "Extremely clear sound. Waterproof."));
+Insert a Product at a specific index using the add method:
+java
+Copy code
+products.add(1, new Product("36 AAA batteries", 10.99, "High-performance alkaline batteries."));
+Remove a Product from the ArrayList using the remove method:
+java
+Copy code
+products.remove(2);
+Set a Product at a specific index using the set method:
+java
+Copy code
+products.set(0, new Product("Rubber duck", 5.99, "You can't have bath without this."));
+Iterate over the ArrayList and print each Product using an enhanced for loop:
+java
+Copy code
+for (Product product : products) {
+    System.out.println(product);
+}
+Retrieve and print the third element in the list using the get method:
+java
+Copy code
+System.out.println("The third element in the list:");
+System.out.println(products.get(2));
+Print the number of products in the ArrayList using the size method:
+java
+Copy code
+System.out.println(products.size() + " products can be found in the list.");
+The code demonstrates various operations on the ArrayList, such as adding, removing, setting, and accessing elements. It also showcases the usage of the Product class, which represents a product in the web shop application.
